@@ -1,0 +1,17 @@
+@model IEnumerable<ConsumeWebAPI.Models.Ward>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Index</h1>
+<a asp-action="Create">Create New </a>
+<table class="table">
+    <thead>
+        <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ward1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+    </thead>
+</table>
