@@ -2,16 +2,24 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h1>Index</h1>
-<a asp-action="Create">Create New </a>
-<table class="table">
-    <thead>
+
+<h2>List of ward</h2>
+
+<table class="content-table table-bordered ">
+    <thead >
         <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Ward1)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
+            <th>QN</th>
+            <th>ชื่อ-นามสกุล</th>
+        </tr>
     </thead>
+    <tbody>
+        @foreach (var ward in Model)
+        {
+         
+            <tr  style="color:rgb(0, 0, 0);@ViewBag.Title">
+                <td>@ward.Ward1</td>
+                <td>@ward.Name</td>
+            </tr>
+        }   
+    </tbody>
 </table>

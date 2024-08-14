@@ -5,13 +5,12 @@ namespace ConsumeWebAPI.Models
 {
     public class ProductViewModel
     {
-        public int Id { get; set; }
-        [Required]
-        [DisplayName("Product Name")]
-        public string ProductName { get; set; }
-        [Required]
-        public double Price { get; set; }
-        [Required]
-        public int Qty { get; set; }
+        public string hn { get; set; }
+        public string pname { get; set; }
+        public string fname { get; set; }
+        public string lname { get; set; }
+        public string vstdate { get; set; }
     }
+
 }
+    

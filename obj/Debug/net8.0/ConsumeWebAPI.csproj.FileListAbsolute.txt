@@ -31,3 +31,6 @@ C:\ConsumeWebAPI\obj\Debug\net8.0\refint\ConsumeWebAPI.dll
 C:\ConsumeWebAPI\obj\Debug\net8.0\ConsumeWebAPI.pdb
 C:\ConsumeWebAPI\obj\Debug\net8.0\ConsumeWebAPI.genruntimeconfig.cache
 C:\ConsumeWebAPI\obj\Debug\net8.0\ref\ConsumeWebAPI.dll
+C:\ConsumeWebAPI\obj\Debug\net8.0\ConsumeWebAPI.sourcelink.json
+C:\ConsumeWebAPI\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\ConsumeWebAPI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

@@ -1,20 +1,39 @@
-@model ConsumeWebAPI.Models.ProductViewModel
+@model List<ProductViewModel>
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "ProductViewModel";
 }
-<h1>Product</h1>
-<div class="row">
+
+<h4>รายการขอใช้บริการ</h4>
+
     <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Id" class="control-ladel"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+        <form class="d-flex" asp-action="Create" asp-asp-controller="Product">
+            <input name="paraHN" class="form-control me-1" type="text" placeholder="HN/QN" aria-label="Search">
+            <button class="btn btn-dark" type="submit">Search</button>
         </form>
     </div>
-</div>
+    <div>
+        <a asp-action="Index" class="text-dark">Back to Full List</a>
+    </div>
+
+<form method="post" enctype="multipart/form-data">
+<table class="table">
+    <thead>
+        <tr>
+            <th>QN</th>
+            <th>ชื่อ-นามสกุล</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var i in Model)
+        {
+            <tr  style="color:black; @ViewBag.Title">
+                <td>@i.hn</td>
+                <td>@i.pname @i.fname @i.lname </td> 
+            </tr>
+        }
+        
+    </tbody>
+</table>
+</form>
